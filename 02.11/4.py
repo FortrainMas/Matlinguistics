@@ -15,5 +15,4 @@ for i in range(0, len(text)):
     p = morth.parse(text[i])[0]
     text[i] = p.normal_form
 
-f = open('normalized.txt', 'w', encoding='utf-8')
-f.write(" ".join(text))
+print(" ".join(text))
